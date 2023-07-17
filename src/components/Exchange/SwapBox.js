@@ -1063,7 +1063,7 @@ export default function SwapBox(props) {
       return t`Open a position`;
     }
     if (!active) {
-      return t`Connect Wallet`;
+      return t`Buy Now`;
     }
     if (!isSupportedChain(chainId)) {
       return t`Incorrect Network`;
@@ -1902,7 +1902,7 @@ export default function SwapBox(props) {
         <div className="Exchange-swap-box-inner App-box-highlight">
           <div>
             <Tab
-              icons={SWAP_ICONS}
+              icons={[]}
               options={SWAP_OPTIONS}
               optionLabels={SWAP_LABELS}
               option={swapOption}
@@ -2381,7 +2381,6 @@ export default function SwapBox(props) {
             )}
           </div>
         )}
-        <UsefulLinks className="Useful-links-swapbox" />
       </div>
       <NoLiquidityErrorModal
         chainId={chainId}

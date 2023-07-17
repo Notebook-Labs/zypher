@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap');
 html,
 body,
 #root {
@@ -5,15 +6,14 @@ body,
   width: 100%;
   margin: 0;
   padding: 0;
-  color: white;
+  color: #545454;
   font-size: 10px;
-  background-color: #101124;
+  background-color: #ffffff;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
   -webkit-font-smoothing: subpixel-antialiased;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -22,16 +22,17 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+input { 
+  color: black;
+}
 
 * {
   box-sizing: border-box;
-  font-family: "Relative", sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
+
   letter-spacing: 0.05rem;
 }
 
-input {
-  font-family: "RelativeNumber";
-}
 
 /* Track */
 ::-webkit-scrollbar-track {
@@ -51,7 +52,8 @@ input {
 }
 
 :root {
-  --dark-blue: #17182c;
+  --dark-blue: #ffffff;
+  --zephyr-gray: #545454
   --dark-blue-bg: #16182e;
   --dark-blue-accent: #a0a3c4;
   --primary-btn-bg: #2d42fc;
@@ -60,7 +62,7 @@ input {
   --dark-blue-hover: #808aff14;
   --dark-blue-border: #ffffff29;
   --dark-blue-active: #818cef33;
-  --text-gray: rgba(255, 255, 255, 0.7);
+  --text-gray: #545454;
   --avax-red: #e84143;
   --arbitrum-blue: #28a0f0;
   --border-radius-sm: 0.4rem;
@@ -93,7 +95,7 @@ input[type="number"] {
 
 input {
   font-size: 2rem;
-  color: white;
+  color: black;
   outline: none;
   background: none;
   border: none;

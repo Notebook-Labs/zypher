@@ -598,11 +598,14 @@ table.Exchange-list th {
 .Exchange-swap-market-box-title {
   font-size: var(--font-md);
   margin-bottom: 1.25rem;
+  font-weight: 500;
 }
 
 .Exchange-swap-box-inner {
   padding: 1.5rem;
-}
+  outline: 1px solid #FFF !important;
+  background: #FFF;
+  box-shadow: -5px 10px 25px 8px rgba(0,0,0,0.25);}
 
 .Exchange-swap-market-box {
   padding: 1.5rem;
@@ -643,15 +646,8 @@ table.Exchange-list th {
 .Exchange-swap-section {
   padding: 1.5rem;
   margin-bottom: 1.05rem;
-  border-radius: 0.3rem;
-  background: linear-gradient(90deg, rgba(30, 34, 61, 0.9) 0%, rgba(38, 43, 71, 0.9) 100%);
   box-shadow: inset 0px 0px 3rem 0.5rem rgba(255, 255, 255, 0.01);
-  outline: 1px solid transparent;
-}
-
-.Exchange-swap-section:hover,
-.Exchange-swap-section:focus-within {
-  outline-color: #3a3f798f;
+  outline: 1px solid #0016dd;
 }
 
 .Exchange-swap-option-tabs.Tab.block .Tab-option {
