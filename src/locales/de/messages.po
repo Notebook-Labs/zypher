@@ -461,6 +461,10 @@ msgstr ""
 msgid "Buy GMX using any token from any network:"
 msgstr ""
 
+#: src/components/Exchange/SwapBox.js
+msgid "Buy Now"
+msgstr ""
+
 #: src/components/Glp/GlpSwap.js
 msgid "Buy failed."
 msgstr "Kauf fehlgeschlagen."
@@ -777,7 +781,6 @@ msgid "Connect"
 msgstr "Verbinden"
 
 #: src/App/App.js
-#: src/components/Exchange/SwapBox.js
 #: src/components/Glp/GlpSwap.js
 #: src/components/Header/AppHeaderUser.tsx
 #: src/components/Migration/Migration.js

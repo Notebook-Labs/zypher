@@ -461,6 +461,10 @@ msgstr "Buy GMX using FIAT gateways:"
 msgid "Buy GMX using any token from any network:"
 msgstr "Buy GMX using any token from any network:"
 
+#: src/components/Exchange/SwapBox.js
+msgid "Buy Now"
+msgstr "Buy Now"
+
 #: src/components/Glp/GlpSwap.js
 msgid "Buy failed."
 msgstr "Buy failed."
@@ -777,7 +781,6 @@ msgid "Connect"
 msgstr "Connect"
 
 #: src/App/App.js
-#: src/components/Exchange/SwapBox.js
 #: src/components/Glp/GlpSwap.js
 #: src/components/Header/AppHeaderUser.tsx
 #: src/components/Migration/Migration.js
