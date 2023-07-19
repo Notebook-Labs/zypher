@@ -47,7 +47,7 @@ export function Header({
 }: Props) {
   const [isDrawerVisible, setIsDrawerVisible] = useState(false);
   const [isNativeSelectorModalVisible, setIsNativeSelectorModalVisible] = useState(false);
-
+  const [mode, setMode] = useState("Advanced");
   useEffect(() => {
     if (isDrawerVisible) {
       document.body.style.overflow = "hidden";
@@ -95,15 +95,25 @@ export function Header({
       <header>
         <div className="App-header large">
           <div className="App-header-container-left">
-            <Link className="App-header-link-main" to="/">
-              <img src={logoImg} className="big" alt="GMX Logo" />
-              <img src={logoSmallImg} className="small" alt="GMX Logo" />
-            </Link>
-            {isHomeSite() ? (
-              <HomeHeaderLinks redirectPopupTimestamp={redirectPopupTimestamp} showRedirectModal={showRedirectModal} />
-            ) : (
-              <AppHeaderLinks redirectPopupTimestamp={redirectPopupTimestamp} showRedirectModal={showRedirectModal} />
-            )}
+            <h3 className="page-name-trade">Trade</h3>
+            <div className="simple-advanced-switch">
+              <button
+                className={`switch-button ${mode === "Simple" ? "active" : undefined}`}
+                onClick={() => {
+                  setMode("Simple");
+                }}
+              >
+                Simple
+              </button>
+              <button
+                className={`switch-button ${mode === "Advanced" ? "active" : undefined}`}
+                onClick={() => {
+                  setMode("Advanced");
+                }}
+              >
+                Advanced
+              </button>
+            </div>
           </div>
           <div className="App-header-container-right">
             <AppHeaderUser

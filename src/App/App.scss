@@ -32,11 +32,11 @@
 }
 
 .App-header.large::after {
-  height: 1.3rem;
+  height: 2px;
   width: 100%;
   content: " ";
-  background: transparent linear-gradient(180deg, #00000030 0%, #00000000 100%) 0% 0% no-repeat padding-box;
   position: absolute;
+  fill: blue;
   bottom: -1.3rem;
   left: 0;
 }

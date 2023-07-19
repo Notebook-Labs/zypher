@@ -89,21 +89,10 @@ export function AppHeaderUser({
   if (!active || !account) {
     return (
       <div className="App-header-user">
-        <div className={cx("App-header-trade-link", { "homepage-header": isHomeSite() })}>
-          <HeaderLink
-            className="default-btn"
-            to="/trade"
-            redirectPopupTimestamp={redirectPopupTimestamp}
-            showRedirectModal={showRedirectModal}
-          >
-            {isHomeSite() ? <Trans>Launch App</Trans> : <Trans>Trade</Trans>}
-          </HeaderLink>
-        </div>
-
         {showConnectionOptions ? (
           <>
             <ConnectWalletButton onClick={() => setWalletModalVisible(true)} imgSrc={connectWalletImg}>
-              {small ? <Trans>Connect</Trans> : <Trans>Connect Wallet</Trans>}
+              {small ? <Trans>Buy</Trans> : <Trans>Buy Crypto</Trans>}
             </ConnectWalletButton>
             <NetworkDropdown
               small={small}
@@ -124,17 +113,6 @@ export function AppHeaderUser({
 
   return (
     <div className="App-header-user">
-      <div className="App-header-trade-link">
-        <HeaderLink
-          className="default-btn"
-          to="/trade"
-          redirectPopupTimestamp={redirectPopupTimestamp}
-          showRedirectModal={showRedirectModal}
-        >
-          <Trans>Trade</Trans>
-        </HeaderLink>
-      </div>
-
       {showConnectionOptions ? (
         <>
           <div className="App-header-user-address">

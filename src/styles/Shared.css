@@ -396,7 +396,7 @@ button.btn-link:hover .logout-icon {
 .mt-sm {
   margin-top: 1rem;
 }
-.mt-md {
+.mt-md { 
   margin-top: 1.5rem;
 }
 
@@ -406,6 +406,7 @@ button.btn-link:hover .logout-icon {
   flex-direction: column;
   padding-bottom: calc(4.65rem + 20rem);
   padding-top: 4.65rem;
+  outline: 1px solid #808BEE;
 }
 
 .d-flex {

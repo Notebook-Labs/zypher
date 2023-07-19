@@ -1,14 +1,12 @@
 .connect-wallet-btn {
-  background: transparent;
-  padding: 0.5rem 1.4rem;
+  background: #E5E8FC;
+  padding: .5rem 1.5rem;
   display: inline-flex;
   align-items: center;
   border: none;
-  color: #fff;
-  font-size: var(--font-sm);
   cursor: pointer;
   border: 1px solid var(--dark-blue-border);
-  border-radius: var(--border-radius-sm);
+  border-radius: 1rem;
 
   .btn-icon {
     display: inline-flex;
@@ -16,8 +14,11 @@
     justify-content: center;
   }
   .btn-label {
-    font-weight: 400;
-    font-size: var(--font-sm);
+    color: #0016DD;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
     margin-left: 0.8rem;
     letter-spacing: 0;
   }
