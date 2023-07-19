@@ -1944,11 +1944,7 @@ export default function SwapBox(props) {
                   showTokenImgInDropdown={true}
                 />
               </BuyInputSection>
-              <div className="Exchange-swap-ball-container">
-                <button type="button" className="Exchange-swap-ball" onClick={switchTokens}>
-                  <IoMdSwap className="Exchange-swap-ball-icon" />
-                </button>
-              </div>
+
               <BuyInputSection
                 topLeftLabel={getToLabel()}
                 topRightLabel={isSwap ? t`Balance` : t`Leverage`}

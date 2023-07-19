@@ -391,6 +391,7 @@ msgid "Borrow Fee / Day"
 msgstr "Комиссия за пользование кредитом / день"
 
 #: src/components/Header/AppHeaderLinks.tsx
+#: src/components/Header/AppHeaderUser.tsx
 msgid "Buy"
 msgstr "Купить"
 
@@ -400,6 +401,10 @@ msgstr "Купить / Продать GLP"
 
 #: src/pages/BuyGMX/BuyGMX.tsx
 msgid "Buy AVAX directly to Avalanche or transfer it there."
+msgstr ""
+
+#: src/components/Header/AppHeaderUser.tsx
+msgid "Buy Crypto"
 msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
@@ -777,12 +782,11 @@ msgid "Confirm Swap"
 msgstr "Подтвердить Обмен"
 
 #: src/components/Header/AppHeaderUser.tsx
-msgid "Connect"
-msgstr "Подключение"
+#~ msgid "Connect"
+#~ msgstr "Подключение"
 
 #: src/App/App.js
 #: src/components/Glp/GlpSwap.js
-#: src/components/Header/AppHeaderUser.tsx
 #: src/components/Migration/Migration.js
 #: src/components/Referrals/AddAffiliateCode.js
 #: src/components/Referrals/JoinReferralCode.js
@@ -1722,7 +1726,6 @@ msgstr ""
 msgid "Language"
 msgstr "Язык"
 
-#: src/components/Header/AppHeaderUser.tsx
 #: src/components/ModalViews/RedirectModal.js
 #: src/pages/Home/Home.js
 msgid "Launch App"
@@ -3411,8 +3414,8 @@ msgstr "Всего:"
 
 #: src/components/Header/AppHeaderUser.tsx
 #: src/components/Header/AppHeaderUser.tsx
-msgid "Trade"
-msgstr "Торговля"
+#~ msgid "Trade"
+#~ msgstr "Торговля"
 
 #: src/pages/Home/Home.js
 msgid "Trade BTC, ETH, AVAX and other top cryptocurrencies with up to 50x leverage directly from your wallet"

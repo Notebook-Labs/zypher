@@ -40,8 +40,13 @@ export default function ChartTokenSelector(props) {
             "chart-token-dropdown": !isSwap,
           })}
         >
-          <span className="chart-token-selector--current">{value.symbol} / USD</span>
-          {!isSwap && <FaChevronDown />}
+          <div className="chart-token-selector--current">
+            <img className="token-current-logo" src={value.imageUrl} />
+            <span className="token-selector-name">{value.name}</span>
+            <span className="token-selector-symbol">{value.symbol}</span>
+
+            {!isSwap && <FaChevronDown />}
+          </div>
         </button>
       </Menu.Button>
       <div className="chart-token-menu">

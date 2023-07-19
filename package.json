@@ -27,6 +27,7 @@
     "@web3-react/types": "6.0.7",
     "@web3-react/walletconnect-connector": "6.2.8",
     "bigdecimal": "0.6.1",
+    "bootstrap-icons": "^1.10.5",
     "classnames": "2.3.1",
     "date-fns": "2.27.0",
     "env-cmd": "^10.1.0",

@@ -102,6 +102,7 @@ import ExternalLink from "components/ExternalLink/ExternalLink";
 import { isDevelopment } from "config/env";
 import Button from "components/Button/Button";
 import { roundToTwoDecimals } from "lib/numbers";
+import Sidebar from "components/Sidebar/Sidebar";
 
 if (window?.ethereum?.autoRefreshOnNetworkChange) {
   window.ethereum.autoRefreshOnNetworkChange = false;
@@ -438,6 +439,9 @@ function FullApp() {
   return (
     <>
       <div className="App">
+        <div className="sidebar-App">
+          <Sidebar />
+        </div>
         <div className="App-content">
           <Header
             disconnectAccountAndCloseSettings={disconnectAccountAndCloseSettings}

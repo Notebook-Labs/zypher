@@ -3,6 +3,7 @@
   overflow: hidden;
   min-height: 100%;
   font-size: var(--font-base);
+  display: flex;
 }
 
 .App-header-backdrop {
@@ -21,7 +22,6 @@
 
 .App-header.large {
   height: 6.2rem;
-  backdrop-filter: blur(4px);
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -935,9 +935,13 @@ button.App-button-option:disabled {
 .App-header-user-netowork {
   margin-right: 2.4rem;
 }
-
+.sidebar-App {
+  width: 14rem; /* Adjust the width as needed */
+  background-color: #f0f0f0;
+}
 .App-content {
   position: static !important;
+  flex: 1;
 }
 
 .App-footer {

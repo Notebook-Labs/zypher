@@ -46,7 +46,7 @@ export function useJsonRpcProvider(chainId: number) {
 
       await provider.ready;
 
-      setProvider(provider);
+      //setProvider(provider);
     }
 
     initializeProvider();

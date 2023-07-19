@@ -6527,6 +6527,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bootstrap-icons@npm:^1.10.5":
+  version: 1.10.5
+  resolution: "bootstrap-icons@npm:1.10.5"
+  checksum: 8a0cfbd237723793dfb04106fdeed7f86bb59249a01a1623b325bf84d61306c22bb46d3df0795f80f0e77d43cd7485273571c253ee7910eb67fae9489691daad
+  languageName: node
+  linkType: hard
+
 "brace-expansion@npm:^1.1.7":
   version: 1.1.11
   resolution: "brace-expansion@npm:1.1.11"
@@ -9652,6 +9659,7 @@ __metadata:
     "@web3-react/types": 6.0.7
     "@web3-react/walletconnect-connector": 6.2.8
     bigdecimal: 0.6.1
+    bootstrap-icons: ^1.10.5
     buffer: 6.0.3
     classnames: 2.3.1
     date-fns: 2.27.0
