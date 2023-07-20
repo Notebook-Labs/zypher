@@ -2003,17 +2003,15 @@ export default function SwapBox(props) {
           {showTriggerPriceSection && (
             <BuyInputSection
               topLeftLabel={t`Price`}
-              topRightLabel={t`Mark`}
-              tokenBalance={formatAmount(entryMarkPrice, USD_DECIMALS, 2, true)}
+              topRightLabel={``}
+              tokenBalance={``}
               onClickTopRightLabel={() => {
                 setTriggerPriceValue(formatAmountFree(entryMarkPrice, USD_DECIMALS, 2));
               }}
               showMaxButton={false}
               inputValue={triggerPriceValue}
               onInputValueChange={onTriggerPriceChange}
-            >
-              USD
-            </BuyInputSection>
+            ></BuyInputSection>
           )}
           {isSwap && (
             <div className="Exchange-swap-box-info">
@@ -2037,13 +2035,6 @@ export default function SwapBox(props) {
           )}
           {(isLong || isShort) && !isStopOrder && (
             <div className="Exchange-leverage-box">
-              <ToggleSwitch
-                className="Exchange-leverage-toggle-wrapper"
-                isChecked={isLeverageSliderEnabled}
-                setIsChecked={setIsLeverageSliderEnabled}
-              >
-                <span className="muted">Leverage slider</span>
-              </ToggleSwitch>
               {isLeverageSliderEnabled && (
                 <LeverageSlider isLong={isLong} leverageOption={leverageOption} setLeverageOption={setLeverageOption} />
               )}

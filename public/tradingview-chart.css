@@ -1,9 +1,9 @@
 .theme-dark:root {
-  --dark-blue-bg: #16182e;
+  --dark-blue-bg: #ffffff;
 
-  --tv-color-pane-background: var(--dark-blue-bg);
-  --tv-color-platform-background: var(--dark-blue-bg);
-  --tv-color-pane-background-secondary: var(--dark-blue-bg);
+  --tv-color-pane-background: white;
+  --tv-color-platform-background: white;
+  --tv-color-pane-background-secondary: white;
   --tv-color-toolbar-button-text-hover: #b2b5be;
   --tv-color-toolbar-button-background-hover: #272942;
   --tv-color-toolbar-button-text-active: #ffffff;

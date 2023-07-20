@@ -29,6 +29,7 @@
   padding-right: 3.2rem;
   background: transparent 0% 0% no-repeat padding-box;
   border-bottom: 1px solid #ffffff10;
+  box-shadow: -1px 0px 0px 0px #808BEE,
 }
 
 .App-header.large::after {
@@ -935,10 +936,7 @@ button.App-button-option:disabled {
 .App-header-user-netowork {
   margin-right: 2.4rem;
 }
-.sidebar-App {
-  width: 14rem; /* Adjust the width as needed */
-  background-color: #f0f0f0;
-}
+
 .App-content {
   position: static !important;
   flex: 1;

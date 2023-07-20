@@ -3,6 +3,7 @@ import { BiTrendingUp } from "react-icons/bi";
 import { BsFillBarChartFill, BsQuestionCircle } from "react-icons/bs";
 import { FiCreditCard } from "react-icons/fi";
 import Zephyr from "img/Zephyr.png";
+import "./Sidebar.css";
 const Sidebar = () => {
   return (
     <div className="sidebar">
