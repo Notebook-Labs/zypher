@@ -1918,8 +1918,8 @@ msgid "MEV Optimizer"
 msgstr "MEV Optimizer"
 
 #: src/components/Exchange/SwapBox.js
-msgid "Mark"
-msgstr "Mark"
+#~ msgid "Mark"
+#~ msgstr "Mark"
 
 #: src/components/Exchange/ConfirmationBox.js
 #: src/components/Exchange/ConfirmationBox.js

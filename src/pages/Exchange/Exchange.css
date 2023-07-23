@@ -505,7 +505,7 @@ table.Exchange-list.Orders td {
 }
 
 table.Exchange-list tr {
-  border-bottom: 1px solid #23263b;
+  border-bottom: 1px dashed #0016DD;
 }
 
 table.Exchange-list tr:last-child {
@@ -513,7 +513,7 @@ table.Exchange-list tr:last-child {
 }
 
 table.Exchange-list tr:hover {
-  background: linear-gradient(90deg, rgba(30, 34, 61, 1) 0%, rgba(38, 43, 71, 1) 100%);
+  
   box-shadow: inset 0px 0px 3rem 0.5rem rgba(255, 255, 255, 0.01);
 }
 
@@ -649,7 +649,7 @@ table.Exchange-list th {
 }
 
 .Exchange-swap-option-tabs.Tab.block .Tab-option {
-  padding: 1.05rem;
+  padding: 2.05rem;
 }
 
 .Exchange-swap-order-type-tabs {
