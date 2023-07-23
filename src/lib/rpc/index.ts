@@ -45,8 +45,8 @@ export function useJsonRpcProvider(chainId: number) {
       const provider = new ethers.providers.JsonRpcProvider(rpcUrl);
 
       await provider.ready;
-
-      //setProvider(provider);
+      // @ts-ignore
+      setProvider(provider);
     }
 
     initializeProvider();

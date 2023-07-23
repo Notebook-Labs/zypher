@@ -24,16 +24,16 @@ export async function executeMulticall(
   // If the wallet is not connected or the network does not match the chainId of the request, create a new rpc provider
   if (!provider || provider.network?.chainId !== chainId) {
     const rpcUrl = getRpcUrl(chainId);
-
-    //provider = new ethers.providers.StaticJsonRpcProvider(rpcUrl, { chainId, name: CHAIN_NAMES_MAP[chainId] });
+    // @ts-ignore
+    provider = new ethers.providers.StaticJsonRpcProvider(rpcUrl, { chainId, name: CHAIN_NAMES_MAP[chainId] });
   }
 
-  //const multicall = getMulticallLib(provider);
+  const multicall = getMulticallLib(provider!);
 
   const formattedReq = formatMulticallRequest(request);
 
   const requestPromise = Promise.race([
-    //multicall.call(formattedReq),
+    multicall.call(formattedReq),
     sleep(MAX_TIMEOUT).then(() => Promise.reject("rpc timeout")),
   ]).catch((e) => {
     const fallbackProvider = getFallbackProvider(chainId);
