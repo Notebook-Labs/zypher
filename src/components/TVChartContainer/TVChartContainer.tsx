@@ -85,7 +85,7 @@ export default function TVChartContainer({
           .setBodyFont(`normal 12pt "Relative", sans-serif`)
           .setBodyTextColor("#fff")
           .setLineColor("#3a3e5e")
-          .setBodyBackgroundColor("#3a3e5e")
+          .setBodyBackgroundColor("#fff")
           .setBodyBorderColor("#3a3e5e");
       }
     },
