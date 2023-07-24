@@ -441,7 +441,7 @@ export default function PositionsList(props) {
       <table className="Exchange-list large App-box">
         <tbody>
           <tr className="Exchange-list-header">
-            <th>
+            <th className="left-col-position">
               <Trans>Position</Trans>
             </th>
             <th>
@@ -454,10 +454,7 @@ export default function PositionsList(props) {
               <Trans>Collateral</Trans>
             </th>
             <th>
-              <Trans>Entry Price</Trans>
-            </th>
-            <th>
-              <Trans>Mark Price</Trans>
+              <Trans>Average Open</Trans>
             </th>
             <th>
               <Trans>Liq. Price</Trans>
@@ -505,7 +502,7 @@ export default function PositionsList(props) {
 
             return (
               <tr key={position.key}>
-                <td className="clickable" onClick={() => onPositionClick(position)}>
+                <td className="clickable left-col-position" onClick={() => onPositionClick(position)}>
                   <div className="Exchange-list-title">
                     {!hideActions ? (
                       <Tooltip
@@ -657,9 +654,6 @@ export default function PositionsList(props) {
                 </td>
                 <td className="clickable" onClick={() => onPositionClick(position)}>
                   ${formatAmount(position.averagePrice, USD_DECIMALS, 2, true)}
-                </td>
-                <td className="clickable" onClick={() => onPositionClick(position)}>
-                  ${formatAmount(position.markPrice, USD_DECIMALS, 2, true)}
                 </td>
                 <td className="clickable" onClick={() => onPositionClick(position)}>
                   ${formatAmount(liquidationPrice, USD_DECIMALS, 2, true)}

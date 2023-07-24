@@ -1947,7 +1947,7 @@ export default function SwapBox(props) {
 
               <BuyInputSection
                 topLeftLabel={getToLabel()}
-                topRightLabel={isSwap ? t`Balance` : t`Leverage`}
+                topRightLabel={isSwap ? t`Balance` : t`Lev`}
                 balance={toUsdMax && `${formatAmount(toUsdMax, USD_DECIMALS, 2, true)} USD`}
                 tokenBalance={
                   isSwap
@@ -2061,7 +2061,7 @@ export default function SwapBox(props) {
                   <div className="Exchange-info-label">
                     <Trans>Collateral In</Trans>
                   </div>
-                  <div className="align-right">
+                  <div className="align-right" style={{ fontWeight: 500 }}>
                     <Tooltip
                       position="right-bottom"
                       handle="USD"
@@ -2087,7 +2087,7 @@ export default function SwapBox(props) {
                 <div className="Exchange-info-label">
                   <Trans>Leverage</Trans>
                 </div>
-                <div className="align-right">
+                <div className="align-right" style={{ fontWeight: 500 }}>
                   {hasExistingPosition && toAmount && toAmount.gt(0) && (
                     <div className="inline-block muted">
                       {formatAmount(existingPosition.leverage, 4, 2)}x
@@ -2103,7 +2103,7 @@ export default function SwapBox(props) {
                 <div className="Exchange-info-label">
                   <Trans>Entry Price</Trans>
                 </div>
-                <div className="align-right">
+                <div className="align-right" style={{ fontWeight: 500 }}>
                   {hasExistingPosition && toAmount && toAmount.gt(0) && (
                     <div className="inline-block muted">
                       ${formatAmount(existingPosition.averagePrice, USD_DECIMALS, 2, true)}
@@ -2118,7 +2118,7 @@ export default function SwapBox(props) {
                 <div className="Exchange-info-label">
                   <Trans>Liq. Price</Trans>
                 </div>
-                <div className="align-right">
+                <div className="align-right" style={{ fontWeight: 500 }}>
                   {hasExistingPosition && toAmount && toAmount.gt(0) && (
                     <div className="inline-block muted">
                       ${formatAmount(existingLiquidationPrice, USD_DECIMALS, 2, true)}
@@ -2273,7 +2273,7 @@ export default function SwapBox(props) {
               <div className="Exchange-info-label">
                 <Trans>Exit Price</Trans>
               </div>
-              <div className="align-right">
+              <div className="align-right" style={{ fontWeight: 500 }}>
                 <Tooltip
                   handle={`$${formatAmount(exitMarkPrice, USD_DECIMALS, 2, true)}`}
                   position="right-bottom"
@@ -2302,7 +2302,7 @@ export default function SwapBox(props) {
               <div className="Exchange-info-label">
                 <Trans>Borrow Fee</Trans>
               </div>
-              <div className="align-right">
+              <div className="align-right" style={{ fontWeight: 500 }}>
                 <Tooltip
                   handle={borrowFeeText}
                   position="right-bottom"
@@ -2344,7 +2344,7 @@ export default function SwapBox(props) {
                 <div className="Exchange-info-label">
                   <Trans>Available Liquidity</Trans>
                 </div>
-                <div className="align-right">
+                <div className="align-right" style={{ fontWeight: 500 }}>
                   <Tooltip
                     handle={`$${formatAmount(toTokenInfo.maxAvailableShort, USD_DECIMALS, 2, true)}`}
                     position="right-bottom"

@@ -40,17 +40,11 @@ export default function BuyInputSection({
 
   return (
     <div className="Exchange-swap-section buy-input" onClick={handleBoxClick}>
-      <div className="buy-input-top-row">
+      <div className="buy-input-left-section">
         <div className="text-gray">
           {topLeftLabel}
           {balance && `: ${balance}`}
         </div>
-        <div className={cx("align-right", { clickable: onClickTopRightLabel })} onClick={onClickTopRightLabel}>
-          <span className="text-gray">{topRightLabel}</span>
-          {tokenBalance && <span className="Exchange-swap-label">:&nbsp;{tokenBalance}</span>}
-        </div>
-      </div>
-      <div className="Exchange-swap-section-bottom">
         <div className="Exchange-swap-input-container">
           {!staticInput && (
             <input
@@ -71,8 +65,18 @@ export default function BuyInputSection({
             </button>
           )}
         </div>
-        <div className="PositionEditor-token-symbol">{children}</div>
       </div>
+      {!!topRightLabel && (
+        <div className="buy-input-right-section">
+          <div className={cx("align-right", { clickable: onClickTopRightLabel })} onClick={onClickTopRightLabel}>
+            <span className="text-gray">{topRightLabel}</span>
+            {tokenBalance && <span className="Exchange-swap-label">:&nbsp;{tokenBalance}</span>}
+          </div>
+          <div className="Exchange-swap-section-bottom">
+            <div className="PositionEditor-token-symbol">{children}</div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -308,8 +308,17 @@ export default function ExchangeTVChart(props) {
   };
 
   return (
-    <div className="ExchangeChart tv" ref={ref}>
-      <div className="ExchangeChart-top App-box App-box-border">
+    <div
+      className="ExchangeChart tv"
+      ref={ref}
+      style={{
+        borderRadius: "1rem",
+        outline: "1px solid #808BEE",
+        backgroundColor: "white",
+        zIndex: 1,
+      }}
+    >
+      <div className="ExchangeChart-top App-box App-box-border" style={{ outline: "none", boxShadow: "none" }}>
         <div className="ExchangeChart-top-inner">
           <div>
             <div className="ExchangeChart-title">
@@ -354,7 +363,14 @@ export default function ExchangeTVChart(props) {
           </div>
         </div>
       </div>
-      <div className="ExchangeChart-bottom App-box App-box-border">
+      <div
+        className="ExchangeChart-bottom App-box App-box-border"
+        style={{
+          outline: "none",
+          borderRadius: "1rem",
+          overflow: "hidden",
+        }}
+      >
         {availableNetworksForChart.includes(chainId) && chartToken.symbol && chainId ? (
           <TVChartContainer
             chartLines={chartLines}
