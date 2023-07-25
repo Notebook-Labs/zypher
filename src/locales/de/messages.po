@@ -350,6 +350,10 @@ msgstr "Verfügbar in deinem bevorzugten Netzwerk"
 msgid "Avalanche APR:"
 msgstr "Avalanche APR:"
 
+#: src/components/Exchange/PositionsList.js
+msgid "Average Open"
+msgstr ""
+
 #: src/components/Exchange/SwapBox.js
 #: src/components/Exchange/SwapBox.js
 #: src/components/Glp/GlpSwap.js
@@ -1272,7 +1276,6 @@ msgstr "Neuen Preis eingeben"
 #: src/components/Exchange/PositionEditor.js
 #: src/components/Exchange/PositionSeller.js
 #: src/components/Exchange/PositionsList.js
-#: src/components/Exchange/PositionsList.js
 #: src/components/Exchange/SwapBox.js
 #: src/components/Exchange/SwapBox.js
 msgid "Entry Price"
@@ -1760,10 +1763,13 @@ msgstr ""
 msgid "Leftover position below 10 USD"
 msgstr ""
 
+#: src/components/Exchange/SwapBox.js
+msgid "Lev"
+msgstr ""
+
 #: src/components/Exchange/ConfirmationBox.js
 #: src/components/Exchange/PositionEditor.js
 #: src/components/Exchange/PositionSeller.js
-#: src/components/Exchange/SwapBox.js
 #: src/components/Exchange/SwapBox.js
 msgid "Leverage"
 msgstr "Hebelwirkung"
@@ -1928,7 +1934,6 @@ msgstr "MEV-Optimierer"
 #: src/components/Exchange/OrdersList.js
 #: src/components/Exchange/PositionEditor.js
 #: src/components/Exchange/PositionSeller.js
-#: src/components/Exchange/PositionsList.js
 #: src/components/Exchange/PositionsList.js
 #: src/pages/OrdersOverview/OrdersOverview.js
 msgid "Mark Price"

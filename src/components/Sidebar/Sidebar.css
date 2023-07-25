@@ -9,13 +9,14 @@
 
 .logo {
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 50px;
   flex-grow: 1;
 }
 
@@ -39,6 +40,12 @@
 }
 
 .help-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
   margin-bottom: 20px;
+  width: 100%;
+  padding: 1.1rem 1.6rem;
   /* Add any other desired styles for the help button */
 }
