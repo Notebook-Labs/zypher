@@ -337,6 +337,7 @@ function FullApp() {
   }
 
   const [pendingTxns, setPendingTxns] = useState([]);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const showRedirectModal = (to) => {
     setRedirectModalVisible(true);
@@ -440,7 +441,7 @@ function FullApp() {
     <>
       <div className="App">
         <div className="sidebar-App">
-          <Sidebar />
+          <Sidebar isSidebarOpen={isSidebarOpen} />
         </div>
         <div className="App-content">
           <Header
@@ -449,6 +450,8 @@ function FullApp() {
             setWalletModalVisible={setWalletModalVisible}
             redirectPopupTimestamp={redirectPopupTimestamp}
             showRedirectModal={showRedirectModal}
+            isSidebarOpen={isSidebarOpen}
+            setIsSidebarOpen={setIsSidebarOpen}
           />
           {isHome && (
             <Switch>

@@ -2,12 +2,14 @@ import { FaHome, FaExchangeAlt, FaArrowTrendUp } from "react-icons/fa";
 import { BiTrendingUp } from "react-icons/bi";
 import { BsFillBarChartFill, BsQuestionCircle } from "react-icons/bs";
 import { FiCreditCard } from "react-icons/fi";
-import Zephyr from "img/Zephyr.png";
+import Zephyr from "img/Zephyr.svg";
 import "./Sidebar.css";
-const Sidebar = () => {
+
+const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
+  const reroute = (path) => {};
   return (
-    <div className="sidebar">
-      <div className="logo">
+    <div className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
+      <div className="logo" onClick={reroute("/")}>
         <img src={Zephyr} alt="logo" />
       </div>
       <div className="buttons">
@@ -33,7 +35,7 @@ const Sidebar = () => {
         </button>
       </div>
       <div className="help-button">
-        <button className="button">
+        <button className="button" style={{ justifyContent: "center" }}>
           <BsQuestionCircle />
           Help
         </button>

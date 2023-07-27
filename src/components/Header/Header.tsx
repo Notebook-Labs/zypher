@@ -7,7 +7,7 @@ import { AppHeaderLinks } from "./AppHeaderLinks";
 import logoImg from "img/logo_GMX.svg";
 import logoSmallImg from "img/logo_GMX_small.svg";
 import { RiMenuLine } from "react-icons/ri";
-import { FaTimes } from "react-icons/fa";
+import { FaAlignJustify, FaChevronRight, FaCross, FaHamburger, FaTimes } from "react-icons/fa";
 import { AnimatePresence as FramerAnimatePresence, motion } from "framer-motion";
 
 import "./Header.css";
@@ -36,6 +36,8 @@ type Props = {
   setWalletModalVisible: (visible: boolean) => void;
   redirectPopupTimestamp: number;
   showRedirectModal: (to: string) => void;
+  isSidebarOpen: boolean;
+  setIsSidebarOpen: (isSideBarOpen: boolean) => void;
 };
 
 export function Header({
@@ -44,6 +46,8 @@ export function Header({
   setWalletModalVisible,
   redirectPopupTimestamp,
   showRedirectModal,
+  isSidebarOpen,
+  setIsSidebarOpen,
 }: Props) {
   const [isDrawerVisible, setIsDrawerVisible] = useState(false);
   const [isNativeSelectorModalVisible, setIsNativeSelectorModalVisible] = useState(false);
@@ -132,14 +136,27 @@ export function Header({
             })}
           >
             <div className="App-header-container-left">
-              <div className="App-header-menu-icon-block" onClick={() => setIsDrawerVisible(!isDrawerVisible)}>
-                {!isDrawerVisible && <RiMenuLine className="App-header-menu-icon" />}
-                {isDrawerVisible && <FaTimes className="App-header-menu-icon" />}
+              <div className="hamburger-sidebar" onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
+                {isSidebarOpen ? <FaChevronRight /> : <FaAlignJustify />}
               </div>
-              <div className="App-header-link-main clickable" onClick={() => setIsDrawerVisible(!isDrawerVisible)}>
-                <img src={logoImg} className="big" alt="GMX Logo" />
-                <img src={logoSmallImg} className="small" alt="GMX Logo" />
-              </div>
+              <h3 className="page-name-trade">Trade</h3>
+
+              <button
+                className={`switch-button ${mode === "Simple" ? "active" : undefined}`}
+                onClick={() => {
+                  setMode("Simple");
+                }}
+              >
+                Simple
+              </button>
+              <button
+                className={`switch-button ${mode === "Advanced" ? "active" : undefined}`}
+                onClick={() => {
+                  setMode("Advanced");
+                }}
+              >
+                Advanced
+              </button>
             </div>
             <div className="App-header-container-right">
               <AppHeaderUser

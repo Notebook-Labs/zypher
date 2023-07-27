@@ -1,10 +1,42 @@
+
 .sidebar {
-  width: 18rem; /* Adjust the width as needed */
-  background-color: #fff; /* Adjust the background color as needed */
+  /* Position it fixed and hidden initially */
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 18rem;
+  height: 100vh;
+  transition: left 0.3s ease-in-out;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  background-color: white;
+
+  z-index: 9;
+
+}
+
+.sidebar.open {
+  /* When open class is added, make it visible */
+  left: 0;
+
+}
+
+@media screen and (min-width: 1033px) {
+  .sidebar {
+      /* On larger screens, make it behave like a regular sidebar */
+      position: relative;
+      background-color: transparent;
+
+      height: 100%;
+      left: 0;
+  }
+  
+  .close-button {
+      /* Hide the close button on larger screens */
+      display: none;
+  }
 }
 
 .logo {
@@ -31,6 +63,7 @@
   gap: 0.5rem;
   background-color: transparent;
   border-radius: 1rem;
+  
 }
 .button:hover {
     background-color: #E5E8FC;
@@ -47,5 +80,18 @@
   margin-bottom: 20px;
   width: 100%;
   padding: 1.1rem 1.6rem;
-  /* Add any other desired styles for the help button */
+}
+
+.help-item {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #545454;
+  font-weight: 500;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  border-radius: 1rem;
+  
 }

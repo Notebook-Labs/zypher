@@ -15,7 +15,13 @@
   padding-left: 3.2rem;
   padding-right: 3.2rem;
 }
-
+.hamburger-sidebar {
+  color:#0016DD;
+  font-size: 1.7rem;
+  margin-right: 2rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
 
 .App-header.large .App-header-links {
   display: flex;

@@ -2241,65 +2241,6 @@ export default function SwapBox(props) {
             <div className="App-card-divider" />
             <div className="Exchange-info-row">
               <div className="Exchange-info-label">
-                <Trans>Entry Price</Trans>
-              </div>
-              <div className="align-right">
-                <Tooltip
-                  handle={`$${formatAmount(entryMarkPrice, USD_DECIMALS, 2, true)}`}
-                  position="right-bottom"
-                  renderContent={() => {
-                    return (
-                      <div>
-                        <Trans>
-                          The position will be opened at {formatAmount(entryMarkPrice, USD_DECIMALS, 2, true)} USD with
-                          a max slippage of {parseFloat(savedSlippageAmount / 100.0).toFixed(2)}%.
-                          <br />
-                          <br />
-                          The slippage amount can be configured under Settings, found by clicking on your address at the
-                          top right of the page after connecting your wallet.
-                          <br />
-                          <br />
-                          <ExternalLink href="https://gmxio.gitbook.io/gmx/trading#opening-a-position">
-                            More Info
-                          </ExternalLink>
-                        </Trans>
-                      </div>
-                    );
-                  }}
-                />
-              </div>
-            </div>
-            <div className="Exchange-info-row">
-              <div className="Exchange-info-label">
-                <Trans>Exit Price</Trans>
-              </div>
-              <div className="align-right" style={{ fontWeight: 500 }}>
-                <Tooltip
-                  handle={`$${formatAmount(exitMarkPrice, USD_DECIMALS, 2, true)}`}
-                  position="right-bottom"
-                  renderContent={() => {
-                    return (
-                      <div>
-                        <Trans>
-                          If you have an existing position, the position will be closed at{" "}
-                          {formatAmount(entryMarkPrice, USD_DECIMALS, 2, true)} USD.
-                          <br />
-                          <br />
-                          This exit price will change with the price of the asset.
-                          <br />
-                          <br />
-                          <ExternalLink href="https://gmxio.gitbook.io/gmx/trading#opening-a-position">
-                            More Info
-                          </ExternalLink>
-                        </Trans>
-                      </div>
-                    );
-                  }}
-                />
-              </div>
-            </div>
-            <div className="Exchange-info-row">
-              <div className="Exchange-info-label">
                 <Trans>Borrow Fee</Trans>
               </div>
               <div className="align-right" style={{ fontWeight: 500 }}>

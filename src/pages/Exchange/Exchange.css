@@ -606,6 +606,15 @@ table.Exchange-list th {
   background: #FFF;
   box-shadow: -5px 10px 25px 8px rgba(0,0,0,0.25);}
 
+@media screen and (max-width: 1033px) {
+  .Exchange-swap-box-inner {
+    box-shadow: none;
+    border: 1px solid rgba(0, 22, 221)
+
+
+  }
+
+}
 .Exchange-swap-market-box {
   padding: 1.5rem;
   margin-top: 1.25rem;
@@ -645,7 +654,8 @@ table.Exchange-list th {
 .Exchange-swap-section {
   margin-bottom: 1.05rem;
   box-shadow: inset 0px 0px 3rem 0.5rem rgba(255, 255, 255, 0.01);
-  outline: 1px solid #0016dd;
+  border: none;
+
 }
 
 .Exchange-swap-option-tabs.Tab.block .Tab-option {
