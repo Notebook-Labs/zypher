@@ -1924,7 +1924,7 @@ export default function SwapBox(props) {
             <React.Fragment>
               <BuyInputSection
                 topLeftLabel={t`Pay`}
-                topRightLabel={t`Balance`}
+                topRightLabel={t`Max`}
                 balance={fromUsdMin && `${formatAmount(fromUsdMin, USD_DECIMALS, 2, true)} USD`}
                 tokenBalance={fromBalance && `${formatAmount(fromBalance, fromToken.decimals, 4, true)}`}
                 onClickTopRightLabel={setFromValueToMaximumAvailable}
@@ -2044,14 +2044,24 @@ export default function SwapBox(props) {
                     <Trans>Collateral In</Trans>
                   </div>
 
-                  <div className="align-right">
-                    <TokenSelector
-                      label={t`Collateral In`}
-                      chainId={chainId}
-                      tokenAddress={shortCollateralAddress}
-                      onSelectToken={onSelectShortCollateralAddress}
-                      tokens={stableTokens}
-                      showTokenImgInDropdown={true}
+                  <div className="align-right" style={{ fontWeight: 500 }}>
+                    <Tooltip
+                      position="right-bottom"
+                      handle="USD"
+                      renderContent={() => (
+                        <span className="SwapBox-collateral-tooltip-text">
+                          <Trans>
+                            A snapshot of the USD value of your {existingPosition?.collateralToken?.symbol} collateral
+                            is taken when the position is opened.
+                          </Trans>
+                          <br />
+                          <br />
+                          <Trans>
+                            When closing the position, you can select which token you would like to receive the profits
+                            in.
+                          </Trans>
+                        </span>
+                      )}
                     />
                   </div>
                 </div>
@@ -2169,6 +2179,14 @@ export default function SwapBox(props) {
             </div>
           )}
           <div className="Exchange-swap-button-container">{renderPrimaryButton()}</div>
+          <div className="Exchange-info-row">
+            <div className="Exchange-info-label">
+              <Trans>Balance</Trans>
+            </div>
+            <div className="align-right" style={{ fontWeight: 500 }}>
+              <Trans>1.231 BTC ≈ $35672</Trans>
+            </div>
+          </div>
         </div>
       </form>
       <div className="Exchange-swap-info-group">

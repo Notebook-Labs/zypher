@@ -18,9 +18,9 @@ const chartStyleOverrides = ["candleStyle", "hollowCandleStyle", "haStyle"].redu
 }, {});
 
 const chartOverrides = {
-  "paneProperties.background": "#ffffff",
-  "paneProperties.backgroundGradientStartColor": "#ffffff",
-  "paneProperties.backgroundGradientEndColor": "#ffffff",
+  "paneProperties.background": "#fff",
+  "paneProperties.backgroundGradientStartColor": "#fff",
+  "paneProperties.backgroundGradientEndColor": "#fff",
   "paneProperties.backgroundType": "solid",
   "paneProperties.vertGridProperties.color": "rgba(35, 38, 59, 1)",
   "paneProperties.vertGridProperties.style": 2,
@@ -56,7 +56,6 @@ const enabledFeatures = [
   "header_in_fullscreen_mode",
   "hide_resolution_in_legend",
   "items_favoriting",
-  "hide_left_toolbar_by_default",
 ];
 
 export const defaultChartProps = {

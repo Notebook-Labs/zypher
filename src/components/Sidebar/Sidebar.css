@@ -23,14 +23,17 @@
 
 }
 
-@media screen and (min-width: 1033px) {
+@media screen and (min-width: 1300px) {
   .sidebar {
       /* On larger screens, make it behave like a regular sidebar */
       position: relative;
       background-color: transparent;
+      width: 100%;
 
       height: 100%;
       left: 0;
+      padding-left: .5rem;
+      padding-right: .5rem;;
   }
   
   .close-button {
