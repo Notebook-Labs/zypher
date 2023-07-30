@@ -21,6 +21,10 @@ msgstr "2021年9月1日"
 msgid "06 Jan 2022"
 msgstr "2022年1月6日"
 
+#: src/components/Exchange/SwapBox.js
+msgid "1.231 BTC ≈ $35672"
+msgstr ""
+
 #: src/pages/Dashboard/DashboardV2.js
 msgid "24h Volume"
 msgstr "24時間取引高"
@@ -95,6 +99,7 @@ msgstr ""
 msgid "<0>{0} is required for collateral.</0><1>Swap amount from {1} to {2} exceeds {3} available liquidity. Reduce the \"Pay\" size, or use {4} as the \"Pay\" token to use it for collateral.</1><2>You can buy {5} on 1inch.</2>"
 msgstr ""
 
+#: src/components/Exchange/SwapBox.js
 #: src/components/Exchange/SwapBox.js
 msgid "A snapshot of the USD value of your {0} collateral is taken when the position is opened."
 msgstr "{0}の担保のUSドル建の価値は、ポジションがオープンされた時点でスナップショットされ確定します。"
@@ -709,7 +714,6 @@ msgstr "担保"
 msgid "Collateral ({0})"
 msgstr "担保  ({0})"
 
-#: src/components/Exchange/SwapBox.js
 #: src/components/Exchange/SwapBox.js
 #: src/components/Exchange/SwapBox.js
 msgid "Collateral In"
@@ -1960,6 +1964,7 @@ msgstr "マーケット"
 msgid "Market Cap"
 msgstr "時価総額"
 
+#: src/components/Exchange/SwapBox.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
@@ -3819,6 +3824,7 @@ msgstr "WalletConnect"
 msgid "Weight"
 msgstr "ウェイト"
 
+#: src/components/Exchange/SwapBox.js
 #: src/components/Exchange/SwapBox.js
 msgid "When closing the position, you can select which token you would like to receive the profits in."
 msgstr "ポジションをクローズする際、利益をどのトークンで受け取るかを選択できます。"

@@ -21,6 +21,10 @@ msgstr "2021년 9월 1일"
 msgid "06 Jan 2022"
 msgstr "2022년 1월 6일"
 
+#: src/components/Exchange/SwapBox.js
+msgid "1.231 BTC ≈ $35672"
+msgstr ""
+
 #: src/pages/Dashboard/DashboardV2.js
 msgid "24h Volume"
 msgstr "24시간 거래량"
@@ -95,6 +99,7 @@ msgstr ""
 msgid "<0>{0} is required for collateral.</0><1>Swap amount from {1} to {2} exceeds {3} available liquidity. Reduce the \"Pay\" size, or use {4} as the \"Pay\" token to use it for collateral.</1><2>You can buy {5} on 1inch.</2>"
 msgstr ""
 
+#: src/components/Exchange/SwapBox.js
 #: src/components/Exchange/SwapBox.js
 msgid "A snapshot of the USD value of your {0} collateral is taken when the position is opened."
 msgstr "{0}담보의 USD가치 스냅샷은 해당 포지션이 열려있을 때 결정됩니다."
@@ -709,7 +714,6 @@ msgstr "담보"
 msgid "Collateral ({0})"
 msgstr "담보 ({0})"
 
-#: src/components/Exchange/SwapBox.js
 #: src/components/Exchange/SwapBox.js
 #: src/components/Exchange/SwapBox.js
 msgid "Collateral In"
@@ -1960,6 +1964,7 @@ msgstr "마켓"
 msgid "Market Cap"
 msgstr "시가총액"
 
+#: src/components/Exchange/SwapBox.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
@@ -3819,6 +3824,7 @@ msgstr "지갑연결"
 msgid "Weight"
 msgstr "가중치"
 
+#: src/components/Exchange/SwapBox.js
 #: src/components/Exchange/SwapBox.js
 msgid "When closing the position, you can select which token you would like to receive the profits in."
 msgstr "포지션을 닫을 때, 어떤 토큰으로 이익을 수취할 지 선택할 수 있습니다."

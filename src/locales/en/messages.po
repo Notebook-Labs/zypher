@@ -21,6 +21,10 @@ msgstr "01 Sep 2021"
 msgid "06 Jan 2022"
 msgstr "06 Jan 2022"
 
+#: src/components/Exchange/SwapBox.js
+msgid "1.231 BTC ≈ $35672"
+msgstr "1.231 BTC ≈ $35672"
+
 #: src/pages/Dashboard/DashboardV2.js
 msgid "24h Volume"
 msgstr "24h Volume"
@@ -95,6 +99,7 @@ msgstr "<0>{0} is required for collateral.</0><1>Swap amount from {1} to {2} exc
 msgid "<0>{0} is required for collateral.</0><1>Swap amount from {1} to {2} exceeds {3} available liquidity. Reduce the \"Pay\" size, or use {4} as the \"Pay\" token to use it for collateral.</1><2>You can buy {5} on 1inch.</2>"
 msgstr "<0>{0} is required for collateral.</0><1>Swap amount from {1} to {2} exceeds {3} available liquidity. Reduce the \"Pay\" size, or use {4} as the \"Pay\" token to use it for collateral.</1><2>You can buy {5} on 1inch.</2>"
 
+#: src/components/Exchange/SwapBox.js
 #: src/components/Exchange/SwapBox.js
 msgid "A snapshot of the USD value of your {0} collateral is taken when the position is opened."
 msgstr "A snapshot of the USD value of your {0} collateral is taken when the position is opened."
@@ -709,7 +714,6 @@ msgstr "Collateral"
 msgid "Collateral ({0})"
 msgstr "Collateral ({0})"
 
-#: src/components/Exchange/SwapBox.js
 #: src/components/Exchange/SwapBox.js
 #: src/components/Exchange/SwapBox.js
 msgid "Collateral In"
@@ -1960,6 +1964,7 @@ msgstr "Market"
 msgid "Market Cap"
 msgstr "Market Cap"
 
+#: src/components/Exchange/SwapBox.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
@@ -3819,6 +3824,7 @@ msgstr "WalletConnect"
 msgid "Weight"
 msgstr "Weight"
 
+#: src/components/Exchange/SwapBox.js
 #: src/components/Exchange/SwapBox.js
 msgid "When closing the position, you can select which token you would like to receive the profits in."
 msgstr "When closing the position, you can select which token you would like to receive the profits in."
