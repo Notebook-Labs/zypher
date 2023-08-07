@@ -122,7 +122,7 @@ export default function TVChartContainer({
       datafeed: datafeed,
       theme: defaultChartProps.theme,
       container: chartContainerRef.current,
-      library_path: defaultChartProps.libraryPath,
+      library_path: defaultChartProps.library_path,
       locale: defaultChartProps.locale,
       loading_screen: defaultChartProps.loading_screen,
       enabled_features: defaultChartProps.enabled_features,
